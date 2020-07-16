@@ -62,7 +62,9 @@ if ( sizeof($request_array['events']) > 0 )
 	    if($text == "เลิกอบรมกี่โมง"){
 		   $reply_message = '4 โมงก็ควรเลิกนะ';
 	   }	    
-	   
+	    if($text == "อุณหภูมิตอนนี้" || $text == "อุณหภูมิขณะนี้ || $text == "อุณหภูมิตอนนี้เท่าไหร่"){
+		   $reply_message = '37 องศาเซลเซียส';
+	   }	   
 	    
 	   
 	   $split_text = explode(" ", $text);
